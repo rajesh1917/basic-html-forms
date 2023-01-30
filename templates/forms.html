@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log In Form</title>
+</head>
+
+<style>
+    h1{
+        color :black;
+        background-color: lightblue ;
+        padding: 15px;
+        margin:15px;
+        border-style: dotted;
+        border-color: greenyellow;
+        border-width: 5px;
+    }
+</style>
+
+<body>
+    <h1 align="center">Log In Form </h1>
+        <form method="POST">
+            {% csrf_token %}
+            <table align="center">
+                <tr>
+                    <td><lable for="un"> username : </lable></td>
+                    <td><input type="text" name="username" id="un"></td> 
+                </tr>
+                <tr>
+                    <td><lable for="pw"> password : </lable></td>
+                    <td><input type="password" name="password" id="pw"></td> 
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="reset" name=" ">
+                    </td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
